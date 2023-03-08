@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&display=swap');
+
+:root{
+    ---font : 'Poppins', sans-serif;
+}
+
+
+body{
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    height: 100vh;
+}
+
+.pagina{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*CABECALHO*/
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 0 5% 0 5%;
+}
+
+.cabecalho div:nth-child(1) img{
+    width: 120%;
+}
+
+.cabecalho div img{
+    margin-left: 2%;
+}
+
+.cabecalho div:nth-child(2){
+    display: flex;
+    align-self: center;
+    margin-right: 15%;
+}
+
+.cabecalho div a{
+    margin-right: 35%;
+}
+
+@media(max-width:700px){
+    .cabecalho{
+        justify-content: space-around;
+
+    }
+    .cabecalho div a{
+        margin-right: 25%;
+    }
+}
+
+/*CORPO*/
+
+.container div:nth-child(2){
+    margin-top: -10%;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin-top: 8%;
+    padding: 0 5% 0 5%;
+}
+
+.container div{
+    width: 45%;
+    font-family: var(---font);
+    color: #fff;
+}
+
+.container div:nth-child(2){
+    width: 50% !important;
+}
+
+.container div img{
+    width: 110%;
+}
+
+.container div h2{
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.container div h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 5%;
+
+}
+
+.container div p{
+    line-height: 25px;
+}
+
+.container div button{
+    margin-top: 8%;
+    font-family: var(---font);
+    padding: 2.2% 7% 2.2% 7%;
+    color: #fff;
+    border: solid 1px #658E76;
+    cursor: pointer;
+    margin-right: 8%;
+    background-color: #658E76;
+    transition: ease-in-out 0.5s;
+
+}
+
+.container div button:hover{
+    background-color: #7aa88d;
+
+}
+
+
