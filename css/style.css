@@ -44,11 +44,21 @@ body{
 
 @media(max-width:700px){
     .cabecalho{
+        width: 100%;
+        padding: 0;
         justify-content: space-around;
-
+    }
+    .cabecalho div{
+        width: 40%;
     }
     .cabecalho div a{
-        margin-right: 25%;
+        margin: 15% 13% 0 5%;
+    }
+    .cabecalho div:nth-child(1) img{
+        width: 80%;
+    }
+    body{
+        height: 0;
     }
 }
 
@@ -72,7 +82,7 @@ body{
 }
 
 .container div:nth-child(2){
-    width: 50% !important;
+    width: 50% ;
 }
 
 .container div img{
@@ -111,6 +121,28 @@ body{
 .container div button:hover{
     background-color: #7aa88d;
 
+}
+
+@media(max-width:700px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .container div{
+        width: 100%!important;
+    }
+    .container div img{
+        width: 100%;
+        margin-top: -10%;
+    }
+    .container div:nth-child(1){
+        margin-top: -10%;
+    }
+    .container div h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
 }
 
 
