@@ -1,111 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&display=swap');
 
-:root{
-    ---font : 'Poppins', sans-serif;
+:root {
+    ---font: 'Poppins', sans-serif;
 }
 
 
-body{
+body {
     background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
     height: 100vh;
 }
 
-.pagina{
+.pagina {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 /*CABECALHO*/
 
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
     padding: 0 5% 0 5%;
 }
 
-.cabecalho div:nth-child(1) img{
+.cabecalho div:nth-child(1) img {
     width: 120%;
 }
 
-.cabecalho div img{
+.cabecalho div img {
     margin-left: 2%;
 }
 
-.cabecalho div:nth-child(2){
+.cabecalho div:nth-child(2) {
     display: flex;
     align-self: center;
     margin-right: 15%;
 }
 
-.cabecalho div a{
+.cabecalho div a {
     margin-right: 35%;
 }
 
-@media(max-width:700px){
-    .cabecalho{
+@media(max-width:700px) {
+    .cabecalho {
         width: 100%;
         padding: 0;
         justify-content: space-around;
     }
-    .cabecalho div{
+
+    .cabecalho div {
         width: 40%;
     }
-    .cabecalho div a{
+
+    .cabecalho div a {
         margin: 15% 13% 0 5%;
     }
-    .cabecalho div:nth-child(1) img{
+
+    .cabecalho div:nth-child(1) img {
         width: 80%;
     }
-    body{
+
+    body {
         height: 0;
     }
 }
 
 /*CORPO*/
 
-.container div:nth-child(2){
+.container div:nth-child(2) {
     margin-top: -10%;
 }
 
-.container{
+.container {
     display: flex;
     width: 90%;
     margin-top: 8%;
     padding: 0 5% 0 5%;
 }
 
-.container div{
+.container div {
     width: 45%;
     font-family: var(---font);
     color: #fff;
 }
 
-.container div:nth-child(2){
-    width: 50% ;
+.container div:nth-child(2) {
+    width: 50%;
 }
 
-.container div img{
+.container div img {
     width: 110%;
 }
 
-.container div h2{
+.container div h2 {
     font-weight: 700;
     margin-bottom: 5%;
 }
 
-.container div h1{
+.container div h1 {
     font-weight: 900;
     font-size: 4rem;
     margin-bottom: 5%;
 
 }
 
-.container div p{
+.container div p {
     line-height: 25px;
 }
 
-.container div button{
+.container div button {
     margin-top: 8%;
     font-family: var(---font);
     padding: 2.2% 7% 2.2% 7%;
@@ -118,31 +122,57 @@ body{
 
 }
 
-.container div button:hover{
+.container div button:hover {
     background-color: #7aa88d;
 
 }
 
-@media(max-width:700px){
-    .container{
+@media(max-width:700px) {
+    .container {
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
     }
-    .container div{
-        width: 100%!important;
+
+    .container div {
+        width: 100% !important;
     }
-    .container div img{
+
+    .container div img {
         width: 100%;
         margin-top: -10%;
     }
-    .container div:nth-child(1){
+
+    .container div:nth-child(1) {
         margin-top: -10%;
     }
-    .container div h1{
+
+    .container div h1 {
         font-size: 3rem;
         line-height: 50px;
     }
+
+    .text {
+        display: none;
+    }
+
+    .text2 {
+        display: block !important;
+    }
+
+    .button2 {
+        display: none;
+    }
+
+    .container div button {
+        padding: 3% 10% 3% 10%;
+        margin: 12% 0 12% 0;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 1px rgba(0, 0, 0, 0);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 1px rgba(0, 0, 0, 0);
+        font-weight: 400;
+    }
 }
 
-
+.text2 {
+    display: none;
+}
